@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+body{
+     font-family: "Noto Sans TC", sans-serif;
+     font-weight: 500;
+     line-height: 1.5;
+}
+
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-weight: 700;
+    gap: 40px;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover {
+    color: blue;
+}
+
+.cover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #6C757D;
+    border-bottom: 1px solid #6C757D;
+    gap: 16px; 
+}
+
+.cover-image {
+    width: 50%;
+    display: flex;
+}
+
+.cover-title {
+    width: 50%;
+}
+
+.cover-image img {
+    margin: 0 auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.cover h3{
+    font-size: 20px;
+    color: blue;
+}
+
+.cover h2{
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cover-tag{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.cover-tag p{
+    background: blue;
+    color: white;
+    border-radius: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.content{
+    max-width: 636px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.content a{
+    text-decoration: none;
+    color: blue;
+}
+
+.content h2{
+    color: blue;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.content h3{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.content img{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.content p{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.content ol{
+    list-style: decimal;
+    padding-left: 20px; 
+}
+
+.content ul{
+    list-style: disc;
+    padding-left: 20px; 
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+img{
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+.inline-block{
+    background: #EDEDED;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-radius: 24px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.readmore h2{
+    margin-top: 40px;
+}
+
+.btn ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.btn li{
+    list-style: none;
+    border: black 1px solid;
+    color: black;
+    border-radius: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.btn a{
+    color: black;
+}
+
+.btn li:hover{
+    background-color: #EDEDED;
+}
+
+.contact{
+    max-width: 1920px;
+    display: flex;
+    background-color: #FBFBFB;
+    border-top: #6C757D 1px solid;    
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 312px;   
+    padding-right: 312px;
+}
+
+.email a{
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer p{
+    text-align: center;
+}
+
+@media(max-width:767px){
+	.cover{
+		flex-direction: column;
+	}
+	.cover-image{
+		width:100%
+	}
+
+    .cover-title{
+        width: 100%;
+        padding: 24px;
+    }
+	.content-title{
+		width: 100%;
+		padding: 80px 24px;
+	}
+	
+	.content{
+		width: 100%;
+		padding: 64px 12px ;
+		margin-top: 0px ;
+	    margin-bottom: 0px;
+	}
+
+    .btn ul{
+        margin-top: 40px;
+    }
+
+	.contact{
+		display: none;
+	}
+
+    .footer{
+        border-top: black 1px solid;
+        padding: 24px;
+    }
+}
