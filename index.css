@@ -211,7 +211,8 @@ body{
     height: 476px;
 }
 
-a.tag{
+.tag{
+    color: #0027D5;
     font-size: 24px;
     margin-right: 10px;
     text-decoration: none;
